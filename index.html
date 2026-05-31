@@ -114,12 +114,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      padding-top: 72px; /* clear the fixed nav so logo is never obscured */
+      padding-top: 72px; /* clear the fixed nav */
+      padding-bottom: 1rem;
     }
     .hero-photo-col img {
       width: 100%;
       max-width: 45vw;
-      max-height: calc(100svh - 80px);
+      max-height: calc(100svh - 72px - 2rem); /* nav + top/bottom col padding */
       min-height: 0;
       object-fit: contain;
       object-position: center bottom;
@@ -140,7 +141,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 4rem 5vw 1.5rem 5vw;
+      padding: 72px 5vw; /* symmetric so justify-content:center lands at viewport center */
       background: var(--parchment);
       position: relative;
       overflow: hidden;
