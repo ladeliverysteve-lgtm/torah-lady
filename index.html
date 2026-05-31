@@ -935,15 +935,16 @@
       }
       .btn-secondary { font-size: 0.85rem; }
 
-      /* About */
-      .about-photo-wrap { max-width: 200px; margin: 0 0 1.5rem; }
-      .about-quote-badge {
-        position: static;
-        margin-top: 1.2rem;
-        max-width: 100%;
-        border-radius: 2px;
-        box-shadow: none;
+      /* About: float photo left, bio text wraps beside and below */
+      .about-grid { display: block; overflow: auto; }
+      .about-photo-wrap {
+        float: left;
+        width: 140px;
+        max-width: 140px;
+        margin: 0 1rem 0.75rem 0;
+        overflow: hidden;
       }
+      .about-quote-badge { display: none; }
 
       /* Blog: single column */
       .blog-grid { grid-template-columns: 1fr; gap: 1.8rem; }
