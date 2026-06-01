@@ -193,7 +193,22 @@
       line-height: 1.65;
       color: var(--ink-soft);
       max-width: 38ch;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.25rem;
+      font-weight: 400;
+    }
+    .hero-bullet-list {
+      list-style: disc;
+      text-align: left;
+      margin: 0.25rem auto 0.5rem;
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--ink-soft);
+      font-weight: 400;
+      max-width: 38ch;
+    }
+    .hero-bullet-list li {
+      margin-bottom: 0.1rem;
     }
     .hero-actions {
       display: flex;
@@ -1116,18 +1131,12 @@
       <p class="hero-sub fade-in fade-in-delay-2">
         Illuminating relationships, communication, resilience, responsibility, purpose, and the challenges we all face in life.
       </p>
-      <p class="hero-sub fade-in fade-in-delay-2">
-        Questions that inspire reflection.
-      </p>
-      <p class="hero-sub fade-in fade-in-delay-2">
-        Insights to explore.
-      </p>
-      <p class="hero-sub fade-in fade-in-delay-2">
-        Conversations that deepen understanding.
-      </p>
-      <p class="hero-sub fade-in fade-in-delay-2">
-        Interactive in Approach.
-      </p>
+      <ul class="hero-bullet-list fade-in fade-in-delay-2">
+        <li>Questions that inspire reflection.</li>
+        <li>Insights to explore.</li>
+        <li>Conversations that deepen understanding.</li>
+        <li>Interactive in Approach.</li>
+      </ul>
       <div class="hero-actions fade-in fade-in-delay-3">
         <a href="#books" class="btn-primary">
           Explore the Book
