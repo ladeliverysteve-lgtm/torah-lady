@@ -105,7 +105,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       overflow: hidden;
-      background: var(--cream); /* shows through content-col margins as cream frame */
+      background: var(--cream);
+      padding-right: 2.5rem;  /* cream gap on right, matching photo-col's left padding */
+      padding-bottom: 2.5rem; /* cream gap on bottom, matching photo-col's bottom padding */
     }
     .hero-photo-col {
       position: relative;
@@ -141,8 +143,6 @@
       align-items: center;
       text-align: center;
       padding: 72px 2.5rem 2.5rem;
-      margin-right: 2.5rem;  /* cream gap on right — matches photo-col's 2.5rem side padding */
-      margin-bottom: 2.5rem; /* cream gap on bottom — matches photo-col's 2.5rem bottom padding */
       background: var(--parchment);
       position: relative;
       overflow: hidden;
@@ -842,7 +842,7 @@
       .section { padding: 5rem 5vw; }
 
       /* Hero: stack photo on top, content below, centered */
-      .hero { grid-template-columns: 1fr; height: auto; max-height: none; min-height: 0; overflow: visible; }
+      .hero { grid-template-columns: 1fr; height: auto; max-height: none; min-height: 0; overflow: visible; padding-right: 0; padding-bottom: 0; }
       .hero-photo-col {
         min-height: 0;
         height: auto;
@@ -857,8 +857,6 @@
         margin: 0 auto;
       }
       .hero-content-col {
-        margin-right: 0;
-        margin-bottom: 0;
         padding: 3rem 6vw 4rem;
         text-align: center;
         min-height: auto;
