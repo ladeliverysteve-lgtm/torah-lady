@@ -245,6 +245,8 @@
       transition: color 0.2s, border-color 0.2s;
     }
     .btn-secondary:hover { color: var(--teal); border-color: var(--teal); }
+    .mobile-break { display: none; }
+    @media (max-width: 900px) { .mobile-break { display: block; } }
     .hero-scroll-hint {
       position: absolute;
       bottom: 2.5rem;
@@ -1147,7 +1149,7 @@
         Grounded in Torah.
       </p>
       <p class="hero-sub fade-in fade-in-delay-2">
-        Illuminating relationships, communication, resilience, responsibility, purpose, and the challenges we all face in life.
+        Illuminating relationships, communication, resilience, responsibility, purpose,<br class="mobile-break"> and the challenges we all face in life.
       </p>
       <ul class="hero-bullet-list fade-in fade-in-delay-2" style="margin-top:1rem">
         <li>Questions that inspire reflection.</li>
