@@ -106,7 +106,7 @@
       grid-template-columns: 1fr 1fr;
       overflow: hidden;
       background: var(--cream);
-      padding: 0 4% 2.5rem; /* equal cream on left + right; 2.5rem cream at bottom */
+      padding: 0;
     }
     .hero-photo-col {
       position: relative;
@@ -116,7 +116,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 72px 0 0; /* top clears fixed nav; sides/bottom handled by hero padding */
+      padding: 72px 0 0;
+      margin-left: 80px;
     }
     .hero-photo-col img {
       display: block;
@@ -142,7 +143,8 @@
       align-items: center;
       text-align: center;
       padding: 72px 2.5rem 2.5rem;
-      background: var(--parchment);
+      margin-right: 80px;
+      background: var(--cream);
       position: relative;
       overflow: hidden;
     }
@@ -847,6 +849,7 @@
         height: auto;
         max-height: none;
         padding: 72px 12vw 2rem;
+        margin-left: 0;
       }
       .hero-photo-col img {
         width: 100%;
@@ -857,6 +860,8 @@
       }
       .hero-content-col {
         padding: 3rem 6vw 4rem;
+        margin-right: 0;
+        background: var(--cream);
         text-align: center;
         min-height: auto;
         overflow: visible;
