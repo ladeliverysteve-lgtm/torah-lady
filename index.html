@@ -151,6 +151,13 @@
       position: relative;
       overflow: hidden;
     }
+    /* White glow so hero copy stays readable over the city image (no box) */
+    .hero-content-col .hero-headline,
+    .hero-content-col .hero-sub,
+    .hero-content-col .hero-bullet-list,
+    .hero-content-col .hero-bullet-list li {
+      text-shadow: 0 0 8px rgba(255,255,255,0.9), 0 0 8px rgba(255,255,255,0.9), 0 0 4px rgba(255,255,255,1);
+    }
     .hero-eyebrow {
       font-family: var(--ff-body);
       font-size: 0.75rem;
