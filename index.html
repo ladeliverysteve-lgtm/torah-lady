@@ -223,14 +223,14 @@
     }
     .hero-process-list li {
       font-family: var(--ff-body);
-      /* Largest uniform size that keeps every line (incl. the tagline, the
-         actual widest line) on ONE line: available width is 50vw-240px and
-         the widest line's width/font-size ratio is ~25.5, so it just fits. */
-      font-size: clamp(0.95rem, calc(1.958vw - 9.8px), 1.6rem);
-      line-height: 1.3;
+      /* Largest size that keeps each list line on ONE line: bound by the
+         widest list line "Uncover..." (width/font-size ratio ~20.5) against
+         the available width (50vw-240px), so it just fits and no more. */
+      font-size: clamp(1.05rem, calc(2.4366vw - 13px), 2rem);
+      line-height: 1.32;
       color: #1a3d38;
       font-weight: 400;
-      padding: 0.3rem 0;
+      padding: 0.38rem 0;
       white-space: nowrap;
       border-top: 1px solid rgba(26, 61, 56, 0.3);
     }
@@ -1172,7 +1172,7 @@
         <li><strong>Learn</strong> from respected resources.</li>
         <li><strong>Uncover</strong> lessons that speak to your own life.</li>
       </ul>
-      <p class="hero-sub fade-in fade-in-delay-2" style="font-style:italic;font-size:clamp(0.95rem, calc(1.958vw - 9.8px), 1.6rem);white-space:nowrap;max-width:none;margin-top:0.8rem;margin-bottom:0.5rem">
+      <p class="hero-sub fade-in fade-in-delay-2" style="font-style:italic;font-size:clamp(0.95rem, calc(1.958vw - 9.8px), 1.6rem);white-space:nowrap;max-width:none;margin-top:1rem;margin-bottom:0.5rem">
         For every faith. Every background. Every curious mind.
       </p>
       <div class="hero-actions fade-in fade-in-delay-3" style="margin-top:1.5rem">
